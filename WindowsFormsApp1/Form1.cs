@@ -19,13 +19,18 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int w, h;
-            w = int.Parse(textBox1.Text);
-            h = int.Parse(textBox2.Text);
-            int area = w * h;
-            textBox3.Text = area.ToString();
-
-            
+            try
+            {
+                int w, h;
+                w = int.Parse(textBox1.Text);
+                h = int.Parse(textBox2.Text);
+                int area = w * h;
+                textBox3.Text = area.ToString();
+            }
+            catch
+            {
+                MessageBox.Show("nah u wrong");
+            }
         }
     }
 }
