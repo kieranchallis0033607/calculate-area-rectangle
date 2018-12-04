@@ -24,8 +24,8 @@ namespace WindowsFormsApp1
                 int w, h;
                 w = int.Parse(textBox1.Text);
                 h = int.Parse(textBox2.Text);
-                int area = w * h;
-                textBox3.Text = area.ToString();
+                double power = Math.Pow(w,1.0/3.0);
+                textBox3.Text = power.ToString();
             }
             catch
             {
